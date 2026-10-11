@@ -1,28 +1,28 @@
 class CcProxy < Formula
   desc "Anthropic-compatible proxy for Claude Code provider backends"
   homepage "https://github.com/gusnips/cc-proxy"
-  version "0.1.52"
+  version "0.1.53"
   license "MIT"
 
   # sha256 values are taken from the published GitHub Release assets
   # (cc-proxy-<platform>.sha256) every time `version` is bumped.
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gusnips/cc-proxy/releases/download/v0.1.52/cc-proxy-darwin-arm64.tar.gz"
-      sha256 "dbdfbc9039faaa73a2bf5c798ee69b4e1a625413040e2a00601e292bc3426b49"
+      url "https://github.com/gusnips/cc-proxy/releases/download/v0.1.53/cc-proxy-darwin-arm64.tar.gz"
+      sha256 "40fb62b7ae4bce1be50bdf5bb3a6d02bd3e3b93ae6d9411cc5fcda0d8280be99"
     else
-      url "https://github.com/gusnips/cc-proxy/releases/download/v0.1.52/cc-proxy-darwin-amd64.tar.gz"
-      sha256 "2c116c02525b7cec883e2a5236f0791d4ca1c7cd05387e26aec6adc6de4e4155"
+      url "https://github.com/gusnips/cc-proxy/releases/download/v0.1.53/cc-proxy-darwin-amd64.tar.gz"
+      sha256 "d9f74a600f09ded34f05f5fb91534c784811e084517b001f1b9960170a52c905"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/gusnips/cc-proxy/releases/download/v0.1.52/cc-proxy-linux-arm64.tar.gz"
-      sha256 "050ed31b812cfb05473f8f81494823c910ca674b51767954abf971cccc4adc56"
+      url "https://github.com/gusnips/cc-proxy/releases/download/v0.1.53/cc-proxy-linux-arm64.tar.gz"
+      sha256 "333aaa9caefbf41c17d3e591ed3dc3cf3b3917f109e6367623a8a708ebc330bc"
     else
-      url "https://github.com/gusnips/cc-proxy/releases/download/v0.1.52/cc-proxy-linux-amd64.tar.gz"
-      sha256 "68bac23a529b82e3df1c04691d164088e975a8266422e4be8d3dfbe4c079d07c"
+      url "https://github.com/gusnips/cc-proxy/releases/download/v0.1.53/cc-proxy-linux-amd64.tar.gz"
+      sha256 "cee6a5a2451988a9e6071a72f379b0c93a8547f65f25a5c7847ed31b89b0c488"
     end
   end
 
