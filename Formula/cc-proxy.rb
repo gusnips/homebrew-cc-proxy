@@ -4,8 +4,7 @@ class CcProxy < Formula
   version "0.3.0"
   license "MIT"
 
-
-  #sha256 values are taken from the published GitHub Release assets
+  # sha256 values are taken from the published GitHub Release assets
   # (cc-proxy-<platform>.sha256) every time `version` is bumped.
   on_macos do
     if Hardware::CPU.arm?
@@ -21,7 +20,7 @@ class CcProxy < Formula
     if Hardware::CPU.arm?
       url "https://github.com/gusnips/cc-proxy/releases/download/v0.3.0/cc-proxy-linux-arm64.tar.gz"
       sha256 "0a6424fc82d1da1584934b1368563895afcf30a863e22245cff087c6d611d39c"
-  e  else
+    else
       url "https://github.com/gusnips/cc-proxy/releases/download/v0.3.0/cc-proxy-linux-amd64.tar.gz"
       sha256 "03e6de56d051b729d8b90f1eaffd022b25524a6c5473e07a3c9cb53f0712aa47"
     end
@@ -32,7 +31,7 @@ class CcProxy < Formula
   end
 
   service do
-    state_home = ENV.fetch("XDG_STATE_HOME", "#+Dir.home}/.local/state")
+    state_home = ENV.fetch("XDG_STATE_HOME", "#{Dir.home}/.local/state")
 
     run [opt_bin/"cc-proxy", "start", "--no-monitor"]
     keep_alive true
