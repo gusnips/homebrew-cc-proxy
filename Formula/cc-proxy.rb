@@ -9,20 +9,20 @@ class CcProxy < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/gusnips/cc-proxy/releases/download/v0.2.15/cc-proxy-darwin-arm64.tar.gz"
-      sha256 "e22e1cad0e7a8b2182d4cc4e703c6faa0f049be39dbd868cced31146266755b4"
+      sha256 "e59c0faf8ebc6d0c5ecc1c0b1c503476b7e81ce81ad471cc094ef8ae1d335c56"
     else
       url "https://github.com/gusnips/cc-proxy/releases/download/v0.2.15/cc-proxy-darwin-amd64.tar.gz"
-      sha256 "5a25d67b638aafd0960996926797243cc021d6fe61347fcb9a7bec7e62b1de0d"
+      sha256 "2f0fab85a21635f93634eaef6ba248ea3136fb1eb921dc6c4edf2a3df8112252"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/gusnips/cc-proxy/releases/download/v0.2.15/cc-proxy-linux-arm64.tar.gz"
-      sha256 "d9f7f721d4f906dbc3de2340b7fca28935a0173d8b55da7f92ab70e7e78a804d"
+      sha256 "34ca6069cd75d1dac393beb7d97430d97d0eb11851747da61d7231a16a21f218"
     else
       url "https://github.com/gusnips/cc-proxy/releases/download/v0.2.15/cc-proxy-linux-amd64.tar.gz"
-      sha256 "a75d0bef706fd236dc4311371a406e0c0a651bfd0712c784af5ae3b8e9feea43"
+      sha256 "3316de1a85cd64885d033a741c5909fe4cbfc7799ad2f813b187559c63a0d8fc"
     end
   end
 
